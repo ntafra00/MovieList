@@ -1,0 +1,75 @@
+.loginWrapper{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+        overflow: hidden;
+}
+
+.formWrapper{
+    display: flex;
+    background-color: rgba(255,255,255,0.05);
+    height: 600px;
+    width: 400px;
+    /* height: 80%;
+    width: 30%; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.videoBackground{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.titleWrapper{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* fontFamily: "'Bebas Neue', 'cursive'", fontSize: 75, color: 'white'  */
+.title{
+    font-family: Bebas Neue,cursive;
+    font-size: 75px;
+    color: white;
+}
+
+@media screen and (max-width: 450px){
+    .videoBackground{
+        display: none;
+    }
+
+    .loginWrapper{
+        background-color: #353839;
+    }
+
+    .formWrapper{
+        background-color:rgba(255,255,255,0.05);
+        height: 85%;
+        width: 95%;
+    }
+
+    .title{
+        font-size: 18vw;
+    }
+}
